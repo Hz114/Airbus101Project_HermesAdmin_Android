@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="#FF998F"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:stretchColumns="*">
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:id="@+id/logo"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/hermes_logo_admin" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Admin"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="40dp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:background="@drawable/rounded"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            android:id="@+id/meal_btn"
+            android:text="meal"
+            android:onClick = "meal_bnt" />
+
+        <Button
+            android:background="@drawable/rounded"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            android:id="@+id/order_btn"
+            android:text="order"
+            android:onClick = "order_bnt" />
+
+
+        <Button
+            android:background="@drawable/rounded"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            android:id="@+id/stop_btn"
+            android:text="stop"
+            android:onClick = "stop_bnt"
+/>
+    </TableLayout>
+</ScrollView>
